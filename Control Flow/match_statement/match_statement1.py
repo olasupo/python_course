@@ -1,15 +1,20 @@
-def tribe(geolo):
-    match geolo:
-        case "west" | "West":
-            return "Yoruba"
-        case "east" | "East":
-            return "Igbo"
-        case "north" | "North":
-            return "Hausa"
+def hppt(response_code):
+    match response_code:
+        case 200:
+            return "Okay"
+        case 201:
+            return "Updated"
+        case 404:
+            return "Page Not Found"
+        case 403:
+            return "Unauthorized"
+        case 500:
+            return "Internal Server Error"
+        case _:
+            return "Not Likely a valid value"
         
-
-
-while True:
-    response = input ("What part of the country are you from? ")
-    your_tribe = tribe(response)
-    print (f"You are of the {your_tribe} tribe")
+response_code  = 0      
+while response_code != -1:
+    response_code = int(input ("Enter An HTTP response code? "))
+    http_response = hppt(response_code)
+    print (f"Page Request returned {response_code} : {http_response}")
