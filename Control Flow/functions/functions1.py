@@ -1,3 +1,4 @@
+#Example - Simple function 1
 def addition (a,b):
     result = a + b
     return result
@@ -14,3 +15,4 @@ d = subtraction (a, b)
 
 print(f"{a} + {b} = {c}")
 print(f"{a} - {b} = {d}")
+
