@@ -1,9 +1,13 @@
-#Example - dict
+# Example - dict
 
+# Creating a dictionary called phonebook
+# The keys represent the names of the individuals
+# The values represent their corresponding phone numbers
 phonebook = {
-    "Kunle":"+1 742 2340 789",
-    "Smart":"+234 904 5690 532",
-    "Rishi": "+44 798 4322 786",
+    "Kunle": "+1 742 230 789",    # Kunle's phone number
+    "Smart": "+234 904 560 532",   # Smart's phone number
+    "Rishi": "+44 798 432 786",    # Rishi's phone number
 }
 
-print (phonebook)
+# Printing the phonebook dictionary to display its contents
+print(phonebook)
